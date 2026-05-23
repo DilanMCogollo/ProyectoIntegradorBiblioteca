@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo - Biblioteca I.U Digital</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 font-sans">
+    <header class="bg-[#003B73] text-white shadow-lg p-6">
+        <h1 class="text-3xl font-bold text-center">Catalogo de libros</h1>
+    </header>
+    <nav class="bg-[#D62828] p-4 flex justify-center gap-6 flex-wrap">
+        <a href="index.html" class="text-white hover:text-yellow-300 font-semibold">Inicio</a>
+        <a href="catalogo.html" class="text-white hover:text-yellow-300 font-semibold">Catalogo</a>
+        <a href="reservas.html" class="text-white hover:text-yellow-300 font-semibold">Reservas</a>
+        <a href="nosotros.html" class="text-white hover:text-yellow-300 font-semibold">Nosotros</a>
+        <a href="contacto.html" class="text-white hover:text-yellow-300 font-semibold">Contacto</a>
+    </nav>
+    <main class="max-w-6xl mx-auto mt-10 bg-white p-8 rounded-xl shadow-md">
+
+        <div class="overflow-x-auto">
+            <table  class="w-full border-collapse">
+                <thead class="bg-[#003B73] text-white">
+                     <tr>
+                        <th class="p-4 border">Título</th>
+                        <th class="p-4 border">Autor</th>
+                        <th class="p-4 border">Estado</th>
+                        <th class="p-4 border">Fecha de prestamo</th>
+                    </tr>
+                </thead>
+               <tbody class="text-center">
+                <tr class="hover:bg-gray-100">
+                    <td class="p-3 border">El último secreto</td>
+                    <td class="p-3 border">Dan Brown</td>
+                    <td class="p-3 border">Disponible</td>
+                    <td class="p-3 border">N/A </td>
+                </tr>
+                <tr class="hover:bg-gray-100">
+                    <td class="p-3 border">Clean code</td>
+                    <td class="p-3 border">Robert C. Martin</td>
+                    <td class="p-3 border">Prestado</td>
+                    <td class="p-3 border">13/12/2020</td>
+                </tr>
+                <tr class="hover:bg-gray-100">
+                    <td class="p-3 border">Introducción a la lógica de programación </td>
+                    <td class="p-3 border">Vicent Moncho Mas</td>
+                    <td class="p-3 border">Disponible</td>
+                    <td class="p-3 border">N/A </td>
+                </tr>
+                <tr class="hover:bg-gray-100">
+                    <td class="p-3 border">PHP, la manera correcta</td>
+                    <td class="p-3 border">Josh Lockhart,Phil Sturgeon</td>
+                    <td class="p-3 border">Disponible</td>
+                    <td class="p-3 border"> N/A</td>
+                </tr>
+                <tr class="hover:bg-gray-100">
+                    <td class="p-3 border">Inteligencia artificial: un enfoque moderno</td>
+                    <td class="p-3 border">Peter Norvig & Stuart Russel</td>
+                    <td class="p-3 border">Disponible</td>
+                    <td class="p-3 border"> N/A</td>
+                </tr>
+
+               </tbody>
+                
+            </table>
+        </div>
+        
+    </main>
+    <footer class="bg-[#003B73] text-white text-center p-4 mt-10">
+        <p>Biblioteca I.U Digital de antioquia - 2026</p>
+    </footer>
+</body>
+
+</html>

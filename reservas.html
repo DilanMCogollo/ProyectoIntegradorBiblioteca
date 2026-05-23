@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas - Biblioteca I.U Digital</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 font-sans">
+    <header class="bg-[#003B73] text-white shadow-lg p-6">
+        <h1 class="text-3xl font-bold text-center">Reserva de libros</h1>
+    </header>
+
+    <nav class="bg-[#D62828] p-4 flex justify-center gap-6 flex-wrap">
+        <a class="text-white hover:text-yellow-300 font-semibold" href="index.html">Inicio</a>
+        <a class="text-white hover:text-yellow-300 font-semibold" href="catalogo.html">Catalogo</a>
+        <a class="text-white hover:text-yellow-300 font-semibold" href="reservas.html">Reservas</a>
+        <a class="text-white hover:text-yellow-300 font-semibold" href="nosotros.html">Nosotros</a>
+        <a class="text-white hover:text-yellow-300 font-semibold" href="contacto.html">Contacto</a>
+    </nav>
+
+    <main class="max-w-6xl mx-auto mt-10 bg-white p-8 rounded-xl shadow-md">
+            <h2 class="text-3xl font-bold text-[#003B73] mb-6">Formulario de reserva</h2>
+        <form class="space-y-5">
+            <div>
+                <label class="block mb-2 font-semibold">Nombre:</label>
+                <input class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[#003B73]" type="text">
+            </div>
+
+            <div>
+                 <label class="block mb-2 font-semibold">Libro:</label>
+                <input class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[#003B73]" type="text">
+            </div>
+           
+            <div>
+                <label class="block mb-2 font-semibold">Fecha de reserva:</label>
+                <input class="w-full border border-gray-300 rounded-lg p-3
+                    focus:outline-none focus:ring-2 focus:ring-[#003B73]" type="date">
+            </div>
+            
+
+            <button  class="bg-[#D62828] hover:bg-red-700
+                text-white px-6 py-3 rounded-lg font-semibold" type="submit">Reservar</button>
+        </form>
+    </main>
+    <footer class="bg-[#003B73] text-white text-center p-4 mt-10">
+        <p>Biblioteca I.U Digital de antioquia - 2026</p>
+    </footer>
+
+</body>
+
+</html>
