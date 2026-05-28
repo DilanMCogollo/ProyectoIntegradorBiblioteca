@@ -23,32 +23,42 @@
 
     <main class="max-w-6xl mx-auto mt-10 bg-white p-8 rounded-xl shadow-md">
             <h2 class="text-3xl font-bold text-[#003B73] mb-6">Formulario de reserva</h2>
-        <form class="space-y-5">
+        <form id="formReserva" class="space-y-5">
             <div>
                 <label class="block mb-2 font-semibold">Nombre:</label>
-                <input class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[#003B73]" type="text">
+                <input id="nombre" class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[#003B73]" type="text">
             </div>
 
             <div>
                  <label class="block mb-2 font-semibold">Libro:</label>
-                <input class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[#003B73]" type="text">
+                <select  id="libro" class="w-full border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[#003B73]">
+                    <option value="1"> Clean Code</option>
+                    <option value="2"> El último secreto</option>
+                    <option value="1"> Introducción a la lógica de programación</option>
+                    <option value="1"> PHP, la manera correcta</option>
+                    <option value="1"> Inteligencia artificial: un enfoque moderno</option>
+
+                </select>
             </div>
            
             <div>
                 <label class="block mb-2 font-semibold">Fecha de reserva:</label>
-                <input class="w-full border border-gray-300 rounded-lg p-3
+                <input id="fecha" class="w-full border border-gray-300 rounded-lg p-3
                     focus:outline-none focus:ring-2 focus:ring-[#003B73]" type="date">
             </div>
             
 
             <button  class="bg-[#D62828] hover:bg-red-700
                 text-white px-6 py-3 rounded-lg font-semibold" type="submit">Reservar</button>
+
+            <p id="mensaje" class="text-green-600 font-semibold mt-4"></p>
         </form>
     </main>
     <footer class="bg-[#003B73] text-white text-center p-4 mt-10">
         <p>Biblioteca I.U Digital de antioquia - 2026</p>
     </footer>
 
+    <script src="../js/reservas.js"></script>
 </body>
 
 </html>
