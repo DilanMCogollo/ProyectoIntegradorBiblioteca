@@ -5,7 +5,7 @@ const mensaje = document.getElementById("mensaje");
 formulario.addEventListener("submit", function (event) {
     event.preventDefault();
 
-    const nombre = this.DOCUMENT_NODE.getElementById("nombre").value.trim();
+    const nombre = document.getElementById("nombre").value.trim();
 
     const correo = document.getElementById("correo").value.trim();
 
