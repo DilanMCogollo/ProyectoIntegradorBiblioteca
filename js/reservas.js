@@ -7,7 +7,8 @@ formulario.addEventListener("submit",function(event){
 
     const nombre=document.getElementById("nombre").value.trim();
 
-    const libro=document.getElementById("libro").value;
+    const libro=document.getElementById("libro");
+    const libroSeleccionado=libro.options[libro.selectedIndex].text;
 
     const fecha=document.getElementById("libro").value;
 
@@ -21,7 +22,9 @@ formulario.addEventListener("submit",function(event){
         return;
     }
 
-    mensaje.textContent=`La reserva del libro "${libro}" fue realizada correctamente para ${nombre}.`;
+    mensaje.classList.add("text-green-600");
+    mensaje.textContent=`La reserva del libro "${libroSeleccionado}" fue realizada correctamente para ${nombre}.`;
+    console.log(libroSeleccionado);
 
     formulario.reset();
 })
