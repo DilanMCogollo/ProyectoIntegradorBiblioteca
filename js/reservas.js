@@ -24,7 +24,6 @@ formulario.addEventListener("submit",function(event){
 
     mensaje.classList.add("text-green-600");
     mensaje.textContent=`La reserva del libro "${libroSeleccionado}" fue realizada correctamente para ${nombre}.`;
-    console.log(libroSeleccionado);
 
     formulario.reset();
 })
